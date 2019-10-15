@@ -13,16 +13,12 @@ public class AIConfiguration {
 
     public static final String GAME_SERVICE_KEY = "GAME_SERVICE_URL";
 
-    @Inject
-    @ConfigProperty(name = GAME_SERVICE_KEY + "/mp-rest/url", defaultValue = "http://localhost:8080")
     private String gameServiceUrl;
 
     /**
      * After you go to the instance of Liberty-Bikes running and register your bot
      * you will stick your key in src/main/resources/META-INF/microprofile-config.properties
      */
-    @Inject
-    @ConfigProperty(name = "player_key")
     private String playerKey;
 
     public String getGameServiceHttp() {
